@@ -1,0 +1,76 @@
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes slideInLeft {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+  }
+body {
+    margin: 0;
+    padding: 0;
+  }
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 768px;
+    width: 1024px;
+    margin: 0px auto 0;
+  }
+  .hero-background {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+  .hero-logo {
+    aspect-ratio: 4.13;
+    object-fit: contain;
+    object-position: center;
+    width: 356px;
+    position: absolute;
+    min-height: 20px;
+    overflow: hidden;
+    top: 29%;
+    left: 40%;
+    height: 89px;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    transform: translateX(-100%);
+    margin: auto;
+  }
+  .hero-image {
+    aspect-ratio: 1.99;
+    object-fit: contain;
+    object-position: center;
+    width: 500px;
+    position: absolute;
+    min-height: 20px;
+    overflow: hidden;
+    top: 44%;
+    left: 450px;
+    height: 203px;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    transform: translateX(-100%);
+    align-self: stretch;
+    margin: auto 0;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
